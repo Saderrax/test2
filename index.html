@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lucky Block Factory Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Lucky Block Factory Calculator</h1>
+
+    <label>
+      Brainrot Item:
+      <select id="brainrotSelect"></select>
+    </label>
+
+    <label>
+      Level:
+      <input type="number" id="levelInput" value="1" min="1">
+    </label>
+
+    <h2>Mutations</h2>
+
+    <div class="mutations">
+      <label><input type="checkbox" class="mutation-check" value="2.5"> Sakura (x2.5)</label>
+      <label><input type="checkbox" class="mutation-check" value="2.5"> Magma (x2.5)</label>
+      <label><input type="checkbox" class="mutation-check" value="2.5"> Snowy (x2.5)</label>
+      <label><input type="checkbox" class="mutation-check" value="3"> Galaxy (x3)</label>
+      <label><input type="checkbox" class="mutation-check" value="2"> Gold (x2)</label>
+      <label><input type="checkbox" class="mutation-check" value="3"> Diamond (x3)</label>
+    </div>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <p class="result">
+      Final Value: <span id="result">0</span>
+    </p>
+  </div>
+
+  <script src="brainrots.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
